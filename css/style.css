@@ -1,0 +1,227 @@
+body {
+    background: #F3F5FC;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    float: left;
+}
+main {
+    height: 100%;
+}
+.entrada {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    position: absolute;
+    top: 10%;
+}
+.input textarea::placeholder{
+    font-size: 20px;
+    color: #0A3871;
+}
+
+.input textarea {
+    border: none;
+    background: transparent;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    resize: none;
+}
+.btn {
+    width: 50%;
+    margin: 0 auto;
+}
+.btn p {
+    font-size: 10px;
+}
+.btn img {
+    width: 3%;
+    vertical-align: top;
+}
+.btn button {
+    width: 40%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#encriptar {
+    background: #0A3871;
+    color: white;
+    border: none;
+}
+#desencriptar {
+    border: 1px solid #0A3871;
+
+    color: #0A3871;
+}
+.salida {
+    display: inline-block;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90%;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 15px #d2d2d2;
+}
+.salida img {
+    width: 75%;
+}
+#salida {
+    text-align: left;
+    margin: 20px;
+    -webkit-user-select: none;  /* Chrome, Safari y Opera */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* Internet Explorer/Edge */
+    user-select: none; 
+}
+.caja-salida {
+    height: 100%;
+}
+.caja-salida button{
+    position: absolute;
+    left: 30%;
+    bottom: 5%;
+    border: 2px solid #0A3871;
+    width: 40%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+#caja-salida {
+    display: none;
+}
+
+.alert-message {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.alert-message div {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.alert-message div button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.open {
+    animation-name: alert;
+    animation-duration: 2s;
+}
+
+.close {
+
+    animation-name: alert-close;
+    animation-duration: 2s;
+}
+
+.success {
+    border: 3px solid rgb(38, 229, 38);
+}
+
+.error {
+    border: 3px solid rgb(231, 37, 37);
+ 
+}
+
+
+
+
+@keyframes alert {
+    0% {
+        position: fixed;
+        right: -40%;
+
+    }
+
+    100% {
+        position: fixed;
+        right: 0;
+
+    }
+}
+
+@keyframes alert-close {
+    0% {
+        position: fixed;
+        right: 0;
+
+    }
+
+    100% {
+        position: fixed;
+        right: -100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    body {
+        width: auto;
+        height: auto;
+    }
+    .entrada, .salida,.caja-salida button {
+        width: 100%;
+        height: 50%;
+        position: static;
+    }
+    .entrada {
+        margin: auto;
+    }
+    .content img {
+        display: none;
+    }
+    .btn button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .caja-salida button {
+        width: 50%;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:940px) {
+    body {
+        width: auto;
+        height: auto;
+    }
+    .entrada, .salida,.caja-salida button {
+        width: 100%;
+        height: 50%;
+        position: static;
+    }
+    .entrada {
+        margin: auto;
+    }
+    .content img {
+        display: none;
+    }
+    .btn {
+        width: 90%;
+    }
+    .btn button {
+        width: 43%;
+        margin: 5px 10px;
+    }
+    .caja-salida button {
+        width: 50%;
+        margin: 10px;
+    }
+}

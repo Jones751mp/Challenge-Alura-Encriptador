@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-419">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/Logo-2.png" type="image/x-icon">
+    <title>Challenge Alura</title>
+</head>
+<body>
+    <header>
+        <h1 class="cabecera">
+            <img src="./img/Logo-2.png" alt="">
+        </h1>
+    </header>
+    <section class="entrada">
+        <div class="input">
+            <textarea placeholder="Ingrese el texto aqui" id="input" rows="14"></textarea>
+        </div>
+        <div class="btn">
+            <p>
+                <img src="./img/bi_exclamation-circle-fill.png" alt=""> solo letras minusculas y sin acentos
+            </p>
+            <button type="button" id="encriptar">Encriptar</button>
+            <button type="button" id="desencriptar">Desencriptar</button>
+        </div>
+    </section>
+    <section class="salida">
+        <div class="content" id="content">
+            <img src="./img/Muñeco.png" alt="">
+            <div class="content">
+                <h3 class="titulo-principal">Ningun mensaje fue encontrado</h3>
+                <p>ingrese un texto que desees encriptar o desencriptar</p>
+            </div>
+        </div>
+        <div class="caja-salida" id="caja-salida">
+            <p id="salida" ></p>
+            <button type="button" id="copiar">copiar</button>
+        </div>
+    </section>
+</main>
+<footer></footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
